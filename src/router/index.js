@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Manage from '../views/Manage.vue'
 
 Vue.use(VueRouter)
 
@@ -21,10 +22,7 @@ Vue.use(VueRouter)
   {
     path: '/manage',
     name: 'Manage',
-    // route level code-splitting
-    // this generates a separate chunk (manage.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "manage" */ '../views/Manage.vue')
+    component: Manage
   }
 ]
 
