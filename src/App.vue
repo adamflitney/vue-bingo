@@ -6,16 +6,18 @@
       <router-link to="/manage">Manage</router-link>
     </div> -->
     <router-view/>
+    <router-link class="linky" to="/manage">Manage</router-link>
   </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
   margin: 0;
   padding: 0;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -37,5 +39,13 @@ body {
 
 #nav a.router-link-exact-active {
   color: rgb(255,10,10);
+}
+
+.linky {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.5rem;
+  color: black;
 }
 </style>
